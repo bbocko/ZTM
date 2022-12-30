@@ -1,0 +1,67 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: url(header.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition-duration: 1s;
+}
+
+h1:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+.think {
+    font-size: 36px;
+}
+
+.create {
+    font-size: 44px;
+}
+
+.illuminate {
+    font-size: 52px;
+}
+
+.btn {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 25px;
+    padding: 0.8rem 1rem;
+    margin-top: 25px;
+}
+
+.btn-primary {
+    background-color: #3218c7;
+    border-color: #3218c7;
+}
+
+.btn-primary:hover {
+    background-color: #230da5 !important;
+    border-color: #230da5 !important;
+}
+
+.btn-primary:active, .btn-primary:active:focus {
+    background-color: #180a6b !important;
+    border-color: #180a6b !important;
+}
