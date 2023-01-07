@@ -6,16 +6,7 @@ body {
     cursor:pointer;
     color:#FFF;
     font-size:2em;
-    border-radius:4px;
-    border:1px solid #bbb;
     transition: all 0.3s linear;
-}
-
-.zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 /* NAV BAR */
@@ -29,6 +20,13 @@ body {
 @media only screen and (max-width: 600px) {
     .main-nav {
         font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .main-nav {
+        font-size: 0.35em;
         padding: 0;
     }
 }
@@ -52,6 +50,50 @@ a {
     align-items: center;
     justify-content: center;
     height: 50vh;
+}
+
+.cover {
+    width: 30rem;
+}
+
+@media only screen and (max-width: 430px) {
+    .cover {
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .cover {
+        width: 18rem;
+    }
+}
+
+/* GRID */
+.grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.box > img {
+    width: 100%;
+}
+
+.box {
+    background-color: #444;
+    padding: 100px;
+    margin: 20px;
+}
+
+.box:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+footer {
+    text-align: center;
 }
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
