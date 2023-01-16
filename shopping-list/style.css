@@ -1,0 +1,80 @@
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+h1,
+h3,
+p {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+#inputField {
+    padding: 6px;
+    margin-right: 10px;
+}
+
+#addButton {
+    border: 1px solid black;
+    border-radius: 40%;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#addButton:hover {
+    background: #e7e7e7;
+}
+
+.list-container {
+    margin-left: 40%;
+}
+
+@media only screen and (max-width: 1040px) {
+    .list-container {
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .list-container {
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .list-container {
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .list-container {
+        margin-left: 15%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .list-container {
+        margin-left: 5%;
+    }
+}
+
+li {
+    width: fit-content;
+}
+
+li>button {
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5em;
+}
+
+.done {
+    text-decoration: line-through;
+}
